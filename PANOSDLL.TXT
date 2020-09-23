@@ -1,0 +1,29 @@
+INSTRUCTIONS FOR USING PANOSDLL
+-------------------------------
+First of all put the file anywhere on your hard drive(Preferably on your system directory). Then open VB and goto the references command. Browse for the PanosDll.dll. Your should see panosprj. You are ready to use the Dll
+-------------------------------
+How to call the dll. (in the general declarations area just put 
+Dim a as new panosdll)
+-------------------------------
+1. CenterControls - Centers all controls in a form
+Parameters: the name of the form
+Example: a.centercontrols me
+-------------------------------
+2. ChangeScreenResolution - Changes the screen's resolution
+Parameters: an integer between 1 and 8
+Example: a.changescreenresolution 3
+Comments: The outcome depends on your video card.
+-------------------------------
+3. ChangeWallPaper - Changes the wallpaper of the desktop
+Parameters: the path of the image
+Example: a.changewallpaper "c:\cat.bmp"
+-------------------------------
+4. ChooseColor - Changes the color (backcolor or forecolor) of a control, or a form
+Parameters: None
+Example: form1.backcolor=a.choosecolor
+-------------------------------
+5. CloseCDRom - Closes the CD-ROM
+Parameters: None
+Example: a.closecdrom
+-------------------------------
+6. ConnectToDUNConnection - Pops up the connect dialog contol for a connection you choose, from the Dial Up Connection
